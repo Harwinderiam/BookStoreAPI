@@ -102,6 +102,9 @@ Authorization: Bearer <your_token_here>
 
 ---
 
+
+---
+
 ## 📌 Sample Endpoints
 
 ### 🔑 Auth
@@ -110,17 +113,24 @@ Authorization: Bearer <your_token_here>
 
 ### 📚 Books
 - `GET /api/books` – Get all books
+- `GET /api/books/:id` – Get book details
 - `POST /api/books` – Create a new book (Admin only)
 - `PUT /api/books/:id` – Update a book (Admin only)
 - `DELETE /api/books/:id` – Delete a book (Admin only)
 
 ### ✍️ Authors
 - `GET /api/authors` – List all authors
+- `GET /api/authors/:id` – Get author details
 - `POST /api/authors` – Add a new author (Admin only)
+- `PUT /api/authors/:id` – Update author (Admin only)
+- `DELETE /api/authors/:id` – Delete author (Admin only)
 
 ### 🏷️ Categories
 - `GET /api/categories` – List all categories
+- `GET /api/categories/:id` – Get category details
 - `POST /api/categories` – Create a new category (Admin only)
+- `PUT /api/categories/:id` – Update category (Admin only)
+- `DELETE /api/categories/:id` – Delete category (Admin only)
 
 ### 🛒 Cart
 - `GET /api/cart` – Get user's cart
@@ -131,24 +141,24 @@ Authorization: Bearer <your_token_here>
 
 ## 🧪 Run Locally
 
-### 1. Clone the repository
 ```bash
+# 1. Clone the repository
 git clone https://github.com/yourusername/bookstore-api.git
 cd bookstore-api
 
-
-### 2. Install dependencies
+# 2. Install dependencies
 npm install
 
-### 3. Configure .env file
-Create a .env file and add:
+# 3. Configure the .env file
+# Create a file named .env in the root and add:
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/bookstore
 JWT_SECRET=your_jwt_secret
 
-### 4.  Start the server
+# 4. Start the development server
 npm run dev
-Server will be running at http://localhost:5000.
+
+The server will be running at http://localhost:5001.
 
 
 ###🧪 Testing
