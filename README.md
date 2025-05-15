@@ -135,17 +135,23 @@ Authorization: Bearer <your_token_here>
 ```bash
 git clone https://github.com/yourusername/bookstore-api.git
 cd bookstore-api
+
+
 ### 2. Install dependencies
 npm install
+
 ### 3. Configure .env file
 Create a .env file and add:
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/bookstore
 JWT_SECRET=your_jwt_secret
+
 ### 4.  Start the server
 npm run dev
 Server will be running at http://localhost:5000.
-🧪 Testing
+
+
+###🧪 Testing
 Use tools like Postman or Thunder Client for manual API testing.📸 Optional: Image Upload (If implemented)
 To enable image uploads for books:
 
@@ -155,7 +161,7 @@ Use Cloudinary or local storage for image hosting.
 
 Add an image field to the Book model and update relevant routes.
 
-✨ Future Enhancements
+###✨ Future Enhancements
 Payment gateway integration (e.g., Stripe, Razorpay)
 
 Order management system
@@ -166,12 +172,12 @@ Wishlist feature
 
 Admin dashboard (Frontend)
 
-🙋‍♀️ Author
+###🙋‍♀️ Author
 Harwinder Kaur
 Full Stack Web Developer
 Portfolio | LinkedIn | GitHub
 
-📄 License
+###📄 License
 This project is licensed under the MIT License.
 
 Let me know if you’d like to include database schemas or example API requests as well.
